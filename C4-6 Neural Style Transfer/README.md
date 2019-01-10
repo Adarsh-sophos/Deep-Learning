@@ -175,7 +175,6 @@ with tf.Session() as test:
 
 </table>
 
-<font color='blue'>
 **What you should remember**:
 - The content cost takes a hidden layer activation of the neural network, and measures how different $a^{(C)}$ and $a^{(G)}$ are. 
 - When we minimize the content cost later, this will help make sure $G$ has similar content as $C$.
@@ -443,11 +442,9 @@ How do you choose the coefficients for each layer? The deeper layers capture hig
 !-->
 
 
-<font color='blue'>
 **What you should remember**:
 - The style of an image can be represented using the Gram matrix of a hidden layer's activations. However, we get even better results combining this representation from multiple different layers. This is in contrast to the content representation, where usually using just a single hidden layer is sufficient.
 - Minimizing the style cost will cause the image $G$ to follow the style of the image $S$. 
-</font color='blue'>
 
 
 
@@ -513,7 +510,6 @@ with tf.Session() as test:
 
 </table>
 
-<font color='blue'>
 **What you should remember**:
 - The total cost is a linear combination of the content cost $J_{content}(C,G)$ and the style cost $J_{style}(S,G)$
 - $\alpha$ and $\beta$ are hyperparameters that control the relative weighting between content and style
@@ -524,7 +520,6 @@ Finally, let's put everything together to implement Neural Style Transfer!
 
 
 Here's what the program will have to do:
-<font color='purple'>
 
 1. Create an Interactive Session
 2. Load the content image 
@@ -538,7 +533,6 @@ Here's what the program will have to do:
     - Define the optimizer and the learning rate
 8. Initialize the TensorFlow graph and run it for a large number of iterations, updating the generated image at every step.
 
-</font>
 Lets go through the individual steps in detail. 
 
 You've previously implemented the overall cost $J(G)$. We'll now set up TensorFlow to optimize this with respect to $G$. To do so, your program has to reset the graph and use an "[Interactive Session](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)". Unlike a regular session, the "Interactive Session" installs itself as the default session to build a graph.  This allows you to run variables without constantly needing to refer to the session object, which simplifies the code.  
@@ -852,7 +846,6 @@ You can also tune your hyperparameters:
 
 Great job on completing this assignment! You are now able to use Neural Style Transfer to generate artistic images. This is also your first time building a model in which the optimization algorithm updates the pixel values rather than the neural network's parameters. Deep learning has many different types of models and this is only one of them! 
 
-<font color='blue'>
 What you should remember:
 - Neural Style Transfer is an algorithm that given a content image C and a style image S can generate an artistic image
 - It uses representations (hidden layer activations) based on a pretrained ConvNet. 

@@ -44,7 +44,7 @@ from matplotlib.pyplot import imshow
 For your next vacation, you decided to spend a week with five of your friends from school. It is a very convenient house with many things to do nearby. But the most important benefit is that everybody has commited to be happy when they are in the house. So anyone wanting to enter the house must prove their current state of happiness.
 
 <img src="images/happy-house.jpg" style="width:350px;height:270px;">
-<caption><center> <u> <font color='purple'> **Figure 1** </u><font color='purple'>  : **the Happy House**</center></caption>
+<caption><center> <u>  **Figure 1** </u>  : **the Happy House**</center></caption>
 
 
 As a deep learning expert, to make sure the "Happy" rule is strictly applied, you are going to build an algorithm which that uses pictures from the front door camera to check if the person is happy or not. The door should open only if the person is happy. 
@@ -276,7 +276,6 @@ Congratulations, you have solved the Happy House challenge!
 
 Now, you just need to link this model to the front-door camera of your house. We unfortunately won't go into the details of how to do that here. 
 
-<font color='blue'>
 **What we would like you to remember from this assignment:**
 - Keras is a tool we recommend for rapid prototyping. It allows you to quickly try out different model architectures. Are there any applications of deep learning to your daily life that you'd like to implement using Keras? 
 - Remember how to code a model in Keras and the four steps leading to the evaluation of your model on the test set. Create->Compile->Fit/Train->Evaluate/Test.

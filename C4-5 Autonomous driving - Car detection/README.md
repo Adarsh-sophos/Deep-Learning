@@ -623,7 +623,6 @@ with tf.Session() as test_b:
 
 </table>
 
-<font color='blue'>
 **Summary for YOLO**:
 - Input image (608, 608, 3)
 - The input image goes through a CNN, resulting in a (19,19,5,85) dimensional output. 
@@ -866,9 +865,9 @@ scores, boxes, classes = yolo_eval(yolo_outputs, image_shape)
 
 Let the fun begin. You have created a (`sess`) graph that can be summarized as follows:
 
-1. <font color='purple'> yolo_model.input </font> is given to `yolo_model`. The model is used to compute the output <font color='purple'> yolo_model.output </font>
-2. <font color='purple'> yolo_model.output </font> is processed by `yolo_head`. It gives you <font color='purple'> yolo_outputs </font>
-3. <font color='purple'> yolo_outputs </font> goes through a filtering function, `yolo_eval`. It outputs your predictions: <font color='purple'> scores, boxes, classes </font>
+1.  yolo_model.input  is given to `yolo_model`. The model is used to compute the output  yolo_model.output 
+2.  yolo_model.output  is processed by `yolo_head`. It gives you  yolo_outputs 
+3.  yolo_outputs  goes through a filtering function, `yolo_eval`. It outputs your predictions:  scores, boxes, classes
 
 **Exercise**: Implement predict() which runs the graph to test YOLO on an image.
 You will need to run a TensorFlow session, to have it compute `scores, boxes, classes`.
@@ -1027,7 +1026,6 @@ If you were to run your session in a for loop over all your images. Here's what 
 
 <caption><center> Predictions of the YOLO model on pictures taken from a camera while driving around the Silicon Valley <br> Thanks [drive.ai](https://www.drive.ai/) for providing this dataset! </center></caption>
 
-<font color='blue'>
 **What you should remember**:
 - YOLO is a state-of-the-art object detection model that is fast and accurate
 - It runs an input image through a CNN which outputs a 19x19x5x85 dimensional volume. 

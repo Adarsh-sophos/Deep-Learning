@@ -79,7 +79,7 @@ In this part, you will build every step of the convolution layer. You will first
 Zero-padding adds zeros around the border of an image:
 
 <img src="images/PAD.png" style="width:600px;height:400px;">
-<caption><center> <u> <font color='purple'> **Figure 1** </u><font color='purple'>  : **Zero-Padding**<br> Image (3 channels, RGB) with a padding of 2. </center></caption>
+<caption><center> <u>  **Figure 1** </u>  : **Zero-Padding**<br> Image (3 channels, RGB) with a padding of 2. </center></caption>
 
 The main benefits of padding are the following:
 
@@ -213,7 +213,7 @@ In this part, implement a single step of convolution, in which you apply the fil
 - Outputs another volume (usually of different size)
 
 <img src="images/Convolution_schematic.gif" style="width:500px;height:300px;">
-<caption><center> <u> <font color='purple'> **Figure 2** </u><font color='purple'>  : **Convolution operation**<br> with a filter of 2x2 and a stride of 1 (stride = amount you move the window each time you slide) </center></caption>
+<caption><center> <u>  **Figure 2** </u>  : **Convolution operation**<br> with a filter of 2x2 and a stride of 1 (stride = amount you move the window each time you slide) </center></caption>
 
 In a computer vision application, each value in the matrix on the left corresponds to a single pixel value, and we convolve a 3x3 filter with the image by multiplying its values element-wise with the original matrix, then summing them up and adding a bias. In this first step of the exercise, you will implement a single step of convolution, corresponding to applying a filter to just one of the positions to get a single real-valued output. 
 
@@ -299,7 +299,7 @@ This will be useful when you will define `a_slice_prev` below, using the `start/
 2. To define a_slice you will need to first define its corners `vert_start`, `vert_end`, `horiz_start` and `horiz_end`. This figure may be helpful for you to find how each of the corner can be defined using h, w, f and s in the code below.
 
 <img src="images/vert_horiz_kiank.png" style="width:400px;height:300px;">
-<caption><center> <u> <font color='purple'> **Figure 3** </u><font color='purple'>  : **Definition of a slice using vertical and horizontal start/end (with a 2x2 filter)** <br> This figure shows only a single channel.  </center></caption>
+<caption><center> <u>  **Figure 3** </u>  : **Definition of a slice using vertical and horizontal start/end (with a 2x2 filter)** <br> This figure shows only a single channel.  </center></caption>
 
 
 **Reminder**:
