@@ -278,7 +278,6 @@ print ("sigmoid(12) = " + str(sigmoid(12)))
 
 </table> 
 
-<font color='blue'>
 **To summarize, you how know how to**:
 1. Create placeholders
 2. Specify the computation graph corresponding to operations you want to compute
@@ -1149,7 +1148,6 @@ print("Your algorithm predicts: y = " + str(np.squeeze(my_image_prediction)))
 
 You indeed deserved a "thumbs-up" although as you can see the algorithm seems to classify it incorrectly. The reason is that the training set doesn't contain any "thumbs-up", so the model doesn't know how to deal with it! We call that a "mismatched data distribution" and it is one of the various of the next course on "Structuring Machine Learning Projects".
 
-<font color='blue'>
 **What you should remember**:
 - Tensorflow is a programming framework used in deep learning
 - The two main object classes in tensorflow are Tensors and Operators. 

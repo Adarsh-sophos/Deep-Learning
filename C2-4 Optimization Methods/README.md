@@ -187,7 +187,6 @@ In practice, you'll often get faster results if you do not use neither the whole
 <img src="images/kiank_minibatch.png" style="width:750px;height:250px;">
 <caption><center> <u> <font color='purple'> **Figure 2** </u>: <font color='purple'>  **SGD vs Mini-Batch GD**<br> "+" denotes a minimum of the cost. Using mini-batches in your optimization algorithm often leads to faster optimization. </center></caption>
 
-<font color='blue'>
 **What you should remember**:
 - The difference between gradient descent, mini-batch gradient descent and stochastic gradient descent is the number of examples you use to perform one update step.
 - You have to tune a learning rate hyperparameter $\alpha$.
@@ -322,7 +321,6 @@ print ("mini batch sanity check: " + str(mini_batches[0][0][0][0:3]))
     
 </table>
 
-<font color='blue'>
 **What you should remember**:
 - Shuffling and Partitioning are the two steps required to build mini-batches
 - Powers of two are often chosen to be the mini-batch size, e.g., 16, 32, 64, 128.
@@ -594,7 +592,6 @@ print("v[\"db2\"] = " + str(v["db2"]))
 - Common values for $\beta$ range from 0.8 to 0.999. If you don't feel inclined to tune this, $\beta = 0.9$ is often a reasonable default. 
 - Tuning the optimal $\beta$ for your model might need trying several values to see what works best in term of reducing the value of the cost function $J$. 
 
-<font color='blue'>
 **What you should remember**:
 - Momentum takes past gradients into account to smooth out the steps of gradient descent. It can be applied with batch gradient descent, mini-batch gradient descent or stochastic gradient descent.
 - You have to tune a momentum hyperparameter $\beta$ and a learning rate $\alpha$.
