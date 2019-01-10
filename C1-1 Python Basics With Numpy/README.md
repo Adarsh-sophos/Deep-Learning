@@ -43,7 +43,6 @@ print ("test: " + test)
 **Expected output**:
 test: Hello World
 
-<font color='blue'>
 **What you need to remember**:
 - Run your cells using SHIFT+ENTER (or "Run cell")
 - Write code in the designated areas using Python 3 only
@@ -561,7 +560,6 @@ print("softmax(x) = " + str(softmax(x)))
 
 Congratulations! You now have a pretty good understanding of python numpy and have implemented a few useful functions that you will be using in deep learning.
 
-<font color='blue'>
 **What you need to remember:**
 - np.exp(x) works for any np.array x and applies the exponential function to every coordinate
 - the sigmoid function and its gradient
@@ -811,7 +809,6 @@ print("L2 = " + str(L2(yhat,y)))
 
 Congratulations on completing this assignment. We hope that this little warm-up exercise helps you in the future assignments, which will be more exciting and interesting!
 
-<font color='blue'>
 **What to remember:**
 - Vectorization is very important in deep learning. It provides computational efficiency and clarity.
 - You have reviewed the L1 and L2 loss.
