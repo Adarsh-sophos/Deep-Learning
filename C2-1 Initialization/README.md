@@ -279,7 +279,6 @@ The model is predicting 0 for every example.
 
 In general, initializing all the weights to zero results in the network failing to break symmetry. This means that every neuron in each layer will learn the same thing, and you might as well be training a neural network with $n^{[l]}=1$ for every layer, and the network is no more powerful than a linear classifier such as logistic regression. 
 
-<font color='blue'>
 **What you should remember**:
 - The weights $W^{[l]}$ should be initialized randomly to break symmetry. 
 - It is however okay to initialize the biases $b^{[l]}$ to zeros. Symmetry is still broken so long as $W^{[l]}$ is initialized randomly. 
@@ -465,7 +464,6 @@ plot_decision_boundary(lambda x: predict_dec(parameters, x.T), train_X, train_Y)
 - Poor initialization can lead to vanishing/exploding gradients, which also slows down the optimization algorithm. 
 - If you train this network longer you will see better results, but initializing with overly large random numbers slows down the optimization.
 
-<font color='blue'>
 **In summary**:
 - Initializing weights to very large random values does not work well. 
 - Hopefully intializing with small random values does better. The important question is: how small should be these random values be? Lets find out in the next part! 
@@ -679,7 +677,6 @@ You have seen three different types of initializations. For the same number of i
     </tr>
 </table> 
 
-<font color='blue'>
 **What you should remember from this notebook**:
 - Different initializations lead to different results
 - Random initialization is used to break symmetry and make sure different hidden units can learn different things

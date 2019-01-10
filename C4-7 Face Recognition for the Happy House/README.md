@@ -57,7 +57,7 @@ np.set_printoptions(threshold=np.nan)
 In Face Verification, you're given two images and you have to tell if they are of the same person. The simplest way to do this is to compare the two images pixel-by-pixel. If the distance between the raw images are less than a chosen threshold, it may be the same person! 
 
 <img src="images/pixel_comparison.png" style="width:380px;height:150px;">
-<caption><center> <u> <font color='purple'> **Figure 1** </u></center></caption>
+<caption><center> <u>  **Figure 1** </u></center></caption>
 
 Of course, this algorithm performs really poorly, since the pixel values change dramatically due to variations in lighting, orientation of the person's face, even minor changes in head position, and so on. 
 
@@ -101,7 +101,7 @@ Total Params: 3743280
 By using a 128-neuron fully connected layer as its last layer, the model ensures that the output is an encoding vector of size 128. You then use the encodings the compare two face images as follows:
 
 <img src="images/distance_kiank.png" style="width:680px;height:250px;">
-<caption><center> <u> <font color='purple'> **Figure 2**: <br> </u> <font color='purple'> By computing a distance between two encodings and thresholding, you can determine if the two pictures represent the same person</center></caption>
+<caption><center> <u>  **Figure 2**: <br> </u>  By computing a distance between two encodings and thresholding, you can determine if the two pictures represent the same person</center></caption>
 
 So, an encoding is a good one if: 
 - The encodings of two images of the same person are quite similar to each other 
@@ -111,7 +111,7 @@ The triplet loss function formalizes this, and tries to "push" the encodings of 
 
 <img src="images/triplet_comparison.png" style="width:280px;height:150px;">
 <br>
-<caption><center> <u> <font color='purple'> **Figure 3**: <br> </u> <font color='purple'> In the next part, we will call the pictures from left to right: Anchor (A), Positive (P), Negative (N)  </center></caption>
+<caption><center> <u>  **Figure 3**: <br> </u>  In the next part, we will call the pictures from left to right: Anchor (A), Positive (P), Negative (N)  </center></caption>
 
 
 
@@ -239,7 +239,7 @@ Here're some examples of distances between the encodings between three individua
 
 <img src="images/distance_matrix.png" style="width:380px;height:200px;">
 <br>
-<caption><center> <u> <font color='purple'> **Figure 4**:</u> <br>  <font color='purple'> Example of distance outputs between three individuals' encodings</center></caption>
+<caption><center> <u>  **Figure 4**:</u> <br>   Example of distance outputs between three individuals' encodings</center></caption>
 
 Let's now use this model to perform face verification and face recognition! 
 
@@ -500,6 +500,7 @@ Although we won't implement it here, here're some ways to further improve the al
 - Face verification solves an easier 1:1 matching problem; face recognition addresses a harder 1:K matching problem. 
 - The triplet loss is an effective loss function for training a neural network to learn an encoding of a face image.
 - The same encoding can be used for verification and recognition. Measuring distances between two images' encodings allows you to determine whether they are pictures of the same person. 
+</font>
 
 Congrats on finishing this assignment! 
 
